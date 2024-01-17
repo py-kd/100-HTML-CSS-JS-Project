@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background: #00008bdb;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper .loader{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.loader .loading{
+    background: #fff;
+    width: 40px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 0 10px;
+    animation: load 1.7s ease infinite;
+}
+
+.loader .loading.one{
+    animation-delay: 0.3s;
+ }
+.loader .loading.two{
+    animation-delay: 0.5s;
+}
+.loader .loading.three{
+    animation-delay: 0.7s;
+}
+.loader .loading.four{
+    animation-delay: 0.9s;    
+}
+
+@keyframes load {
+    0%{
+        width: 20px;
+        height: 20px;        
+    }
+    50%{
+        width: 40px;
+        height: 40px;
+    }
+}
