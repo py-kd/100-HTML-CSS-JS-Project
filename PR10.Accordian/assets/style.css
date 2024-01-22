@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+html , body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+#accordian{
+    margin: 100px auto;
+    width: 600px;
+}
+#accordian li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #aac;
+    padding: 10px;
+}
+#accordian li label{ 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+#accordian li label span{ 
+    transform: rotate(180deg);
+}
+#accordian label + input[type="radio"]{ 
+    display: none;
+}
+#accordian .content{    
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordian label + input[type="radio"]:checked +.content{
+    max-height: 200px;    
+}
