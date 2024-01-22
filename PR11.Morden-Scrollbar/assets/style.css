@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.container{
+    background: linear-gradient(#aaccff, #102030);
+    width: 30rem;
+    padding: 10px;    
+}
+.scroll-div{
+    width: in;
+    height: 500px;
+    background: #012030;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.scroll-object{
+    padding: 20px;
+}
