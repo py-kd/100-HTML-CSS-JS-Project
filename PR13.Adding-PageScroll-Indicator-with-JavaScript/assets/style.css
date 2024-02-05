@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.content{
+    padding: 4rem;
+}
+section{
+    border: 5px solid #3aa000;
+    margin: 10px;
+    padding: 20px;
+}
+section h1{
+    margin: 10px 0;
+}
+
+.scroll-indicator{
+    height: 10px;
+    width: calc(100% - 4em);
+    position: fixed;
+    inset: 0 5px 0 5px  ;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.scroll-indicator .progress{
+    height: 100%;
+    width: 100px;
+    border-radius: 3px;
+    transition: width 0.1s;
+    background: linear-gradient(179deg, #aacff0, #263aaa);
+}
