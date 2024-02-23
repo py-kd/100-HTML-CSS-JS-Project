@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(247, 250, 200);
+    color: rgb(17, 1, 238);
+}
+
+.main{
+    padding: 5px 0;
+    text-align: center;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input{
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 10rem;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#selectOperation{
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    background: #acd;
+    font-size: 2rem;
+}
+
+#btn{    
+    border: none;
+    background: transparent;
+    color: rgb(215, 157, 12);
+    padding: 1.2rem;
+    border: 2px solid rgb(241, 125, 8);
+    margin-top: 10px ;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+}
+
+.result{
+    margin: 1rem;
+}
+
+input[type="number"]{
+    background: #afc;
+    color: rgb(49, 18, 223);
+    font-size: 2rem;
+    border: 2px solid #a00;
+}
+
+/* Hide the up and down arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
