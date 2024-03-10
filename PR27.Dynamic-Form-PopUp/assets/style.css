@@ -1,0 +1,130 @@
+:root{
+    --model-duration: 1s;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(97, 92, 92, 0.6)), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.content-container h1{
+    font-size: 2rem;
+    color: #fff;
+}
+.content-container p{
+    width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    line-height: 24px;
+}
+.cta-btn{
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(246, 220, 29);
+    border: none;
+    outline: none;
+}
+
+.model-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.model{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    overflow: hidden;
+    top: 20%;
+    left: 55%;
+    transform: translate(-50%);
+    max-width: 100%;
+    width: 400px;
+    scale: 1.4;
+}
+.model-content{
+    padding: 20px;
+}
+.model-content h1{
+    color: firebrick;
+    font-size: 2rem;
+    margin: 0;
+}
+.model-form div{
+    margin: 20px 0;
+}
+.model-form label{
+    display: block;
+    margin-bottom: 6px;
+    color: firebrick;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.model-form .form-input{
+    padding: 8px;
+    width: 100%;
+}
+.model-form input.form-input:focus{
+    outline: 2px auto rgb(178, 75, 2);
+    color: blue;
+    font-weight: 800;
+}
+.model .close-btn{
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 2.5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 7px;
+    cursor: pointer;
+}
+.model .close-btn:hover{
+    background: red;
+    border: 2px solid #000;
+}
+.model-form .submit-btn{
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: #002;
+    color: #fff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.model-form .submit-btn:hover{
+    background-color: rgb(0, 210, 154);
+}
+
+/* js */
+.show-model{
+    display: block;
+}
