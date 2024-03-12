@@ -58,8 +58,9 @@
     top: 0;
     width: 0;
     height: 0;
-    background-color: white;
+    background-color: rgb(49, 47, 47);
     transition: transform 0.3s;
+    border: 2px solid #fff;
 }
 /* Menu End*/
 

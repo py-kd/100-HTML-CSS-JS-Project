@@ -3,7 +3,7 @@ const menu = document.querySelector('.menu');
 // console.log(menu);
 
 // link
-const link = document.querySelectorAll('li');
+const links = document.querySelectorAll('li');
 // console.log(link);
 
 // highlight
@@ -23,4 +23,16 @@ btn.addEventListener('click', function() {
             this.dataset.open = 'close';
             highlight
       }
+});
+
+links.forEach(link => {
+      link.addEventListener("pointerover", function(){
+          const w = this.offsetWidth,
+              h = this.offsetHeight,
+              t = this.offsetTop;
+  
+          highlight.forEach(hl => {
+            hl.style.cssText = `transform: translateY(${t}px); width: ${w + 50}px; height: ${h + 5}px `;
+          });
+      });
 });
