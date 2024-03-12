@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu Start */
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    background: linear-gradient(180deg,#102030, #974d5b);
+    clip-path: circle(25px at calc(100vw - 5vw) 35px);
+    transition: clip-path 0.5s;    
+}
+.menu li{
+    position: relative;
+    z-index: 5;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(245, 245, 253);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+    padding: 5px;
+}
+.btn{
+    position: absolute;
+    top: 20px;
+    left: calc(100vw - 5vw);
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.btn > span{
+    width: 8px;
+    height: 8px;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    background: #fff;
+}
+.highligit{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: white;
+    transition: transform 0.3s;
+}
+/* Menu End*/
+
+/* Image Container Start */
+.image-container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border: 2px solid #afc;
+}
+.image-one{
+    background-image: url(imgs/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.image-two{
+    background-image: url(imgs/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Image Container End */
+
+/* Heading Start */
+.container{
+    padding: 0 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    padding: 20px 0;
+}
+article > h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+article > p{
+    max-width: 700px;
+    color: rgb(61, 6, 227);
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+/* Head End */
